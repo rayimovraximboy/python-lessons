@@ -61,3 +61,28 @@ telefonlar = {
 print(telefonlar.get('vali')) # galaxy s9
 print(telefonlar.get('akmal')) # None
 
+# Amaliyot
+otam = {
+    'ism': 'Alisher',
+    'yosh': 42,
+    'kasb': 'Electrik',
+     't_yil': 1984
+}
+print(otam)
+
+onam = {
+    'ism': 'Surayyo',
+    'yosh': 43,
+    'kasb': 'oshpaz',
+    't_yil': 1983
+}
+print(onam)
+
+taomlar = {
+    'bexruz': 'palov',
+    'elbek': 'logmon',
+    'sardor': 'osh',
+    'qobil': 'manti'
+}
+print(taomlar)
+print(f"Elbekning sevimli taomi {taomlar['elbek']},  Qobilning sevimli taomi {taomlar['qobil']}")
