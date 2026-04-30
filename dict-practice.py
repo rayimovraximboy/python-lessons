@@ -12,8 +12,8 @@ izohli_l = {
     'input': 'foydalanuvchi kiritgan ma\'lumot',
     'print': 'ma\'lumotni ekranga chiqarish'
 }
-for kalit in sorted(izohli_l):
-     print(f"{kalit.title()}: {izohli_l[kalit]}")
+for key, value in sorted(izohli_l.items()):
+     print(f"{key.title()}: {value}")
 
 # 2.
 dunyo_davlatlari = {
@@ -46,7 +46,7 @@ davlat = input("Davlat nomini kiriting: ")
 if davlat in davlatlar:
     print("Poytaxt:", davlatlar[davlat])
 else:
-    print("Bizda bunday ma'lumot yo'q")
+    print("Bizda bunday davlat yo'q")
 
 # 4.
 r_menusi = {
@@ -55,4 +55,25 @@ r_menusi = {
     'somsa': 5000,
     'lag\'mon': 12000,
     'manti': 10000,
+    'qabuli': 18000,
+    'plov': 16000,
+    'shurup': 8000,
+    'qozonkatak': 14000,
+    'dimlama': 17000,
+    'chuchvara': 9000,
 }
+jami = 0
+taom1 = input("1-taom: ")
+taom2 = input("2-taom: ")
+taom3 = input("3-taom: ")
+
+for taom in [taom1, taom2, taom3]:
+    if taom in r_menusi:
+        print(taom, "narxi:", r_menusi[taom])
+        jami += r_menusi[taom]
+    else:
+        print(taom, "- bizda bunday taom yo'q")
+
+print("Jami hisob:", jami, "so'm")
+
+
